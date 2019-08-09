@@ -1,0 +1,300 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	 scroll-behavior: smooth;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Heebo', sans-serif;
+}
+
+section{
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8%;
+}
+
+#images-link{
+	margin-top: 15%;
+	visibility: hidden;
+}
+
+header{
+	padding-top: 5px;
+	padding-bottom: 2px;
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	border-bottom: 1.5px solid black;
+}
+
+header::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.title{
+	margin-left: 10%;
+	float: left;
+	margin-top: -10px;
+	font-size: 25px;
+	margin-bottom: -10px;
+	letter-spacing: 0.15em;
+}
+
+.header-links{
+	float: right;
+	margin-right: 10%;
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 5px;
+}
+
+.home-intro{
+	margin-top: 22%;
+	margin-bottom: 1%;
+	display: flex;
+}
+
+.about-us-intro{
+	display: flex;
+}
+
+.intro-text{
+	background-color: white;
+	flex: 1;
+	padding-right: 100px;
+}
+
+.intro.image img{
+	float: right;
+	flex: 1;
+}
+
+.our-portfolio-link, .send-general-enquirie{
+	background-color: #0272d0;
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+#our-portfolio-link{
+	margin-bottom: 8%;
+}
+
+.our-portfolio-link:hover{
+	background-color: #0261b0;
+}
+
+.shortcuts{
+	display: flex;
+	margin-bottom: 2%;
+}
+
+.link1, .link2{
+	background: #0272d0;
+	flex:1;
+	text-align: center;
+	padding: 10px;
+	margin-right: 2px;
+	color: white;
+	text-decoration: none;
+	font-size: 120%;
+}
+
+.link1:hover, .link2:hover{
+	background-color: #0261b0;
+	transition: transform .2s;
+}
+
+#general-enquiries-link{
+	margin-bottom: 19%;
+}
+
+a, h1, h2{
+	  letter-spacing: 0.15em;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+	padding: 15px 0px;
+  position: relative;
+	transition: transform .2s;
+}
+
+nav a:hover{
+	transform: scale(1.1);
+}
+
+.middle-link-padding{
+	margin: 0px 50px;
+}
+
+.middle-link-padding-underline{
+	margin: 0px 50px;
+	text-decoration: underline;
+}
+
+.our-teams, .our-departments-intro{
+	margin-top: 5%;
+}
+
+.Awards, .Reviews{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.highlighted-text, .highlighted-text-underline{
+	background: #0272d0;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.highlighted-text-underline{
+	text-decoration: underline;
+}
+
+.highlighted-text:hover, .highlighted-text-underline:hover{
+	background-color: #0261b0;
+}
+
+.home-images{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 10%;
+	justify-content: space-between;
+}
+
+.container, .container-departments-link{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+	margin-bottom: 10%;
+}
+
+figure{
+  margin: 0;
+  flex-basis: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	margin-bottom: 5%;
+}
+
+.container-departments-link figure{
+	background-color: #0272d0;
+
+}
+
+.container-departments-link figure img {
+	opacity: 1;
+	transition: .3s ease-in-out;
+}
+
+.container-departments-link figure:hover img {
+	opacity: .5;
+}
+
+.container img, .container-departments-link img{
+	width: 100%;
+}
+
+.our-team-images img{
+	width: 90%;
+	height: auto;
+}
+
+.our-team-images{
+	display: flex;
+	background-color: red;
+	justify-content: flex-end;
+}
+
+.our-portfolio{
+	margin-bottom: 6%;
+}
+
+.general-enquiries-outer{
+	margin-top: 100px;
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 12.5%;
+}
+
+.general-enquiries-inner{
+	text-align: center;
+	text-decoration: underline;
+}
+
+.general-enquiries-main-body{
+	margin-bottom: 50px;
+}
+
+.send-general-enquirie:hover{
+	background-color: #0261b0;
+}
+
+form.email input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 100%;
+  background: #f1f1f1;
+	margin-bottom: 20px;
+}
+
+form.type-message-here input[type=text] {
+  padding: 10px;
+	padding-bottom: 180px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 100%;
+  background: #f1f1f1;
+}
+
+.locate-us{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 150px;
+}
+
+.Auckland, .Wellington, .Christchurch{
+	flex: 1;
+	background-color: #e4ebf1;
+	padding: 0 20px;
+}
+
+.Wellington{
+	margin: 0 50px;
+}
+
+.contact-us-directly{
+	max-width: 50%;
+	background-color: #e4ebf1;
+	padding: 5px 20px;
+}
